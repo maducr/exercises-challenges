@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1{
+    color: maroon;
+    background-color: goldenrod;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    text-align: justify;
+}
+/* É a maneira mais versatil para a criação de sites
+-Deve-se usar no dia á dia os estilos externos e os estilos locais, e evitar ao máximo usar estilos inline

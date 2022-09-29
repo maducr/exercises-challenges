@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--links que direcionam para outro site-->
+    <p>Você pode acessar o <a href="https://www.youtube.com/watch?v=lHrwpXrrpYY" target="_black" rel="external">video da música</a></p>
+    <p>Você tambem pode ir ao <a href="https://www.youtube.com/watch?v=lHrwpXrrpYY" target="_black" rel="external">canal do Labrinth</a></p> <!--target="_black" rel="external" - serve para abrir o link em outra aba e não fechar o seu site-->
+
+    <h1>Usando links internos</h1><!--faz a ligação com outra página que esta dentro do nosso servidor e diz respeito com a nossa própria página-->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar támbem a minha <a href="pag002.html" rel="next">segunda página.</a></p><!--ctrl + espaço-->
+    <p>Você támbem pode acessar a nossa <a href="noticias/pag003.html">página de notícias</a></p><!--é necessário informar o caminho percorrido até chegar na página do link #sempre utilize "ctrl + espaço"#-->
+    <!--target para abrir na própria página: "_self"
+        targetpara abrir em outra aba: "_blank"-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="download/Maria Eduarda Rodrigues.pdf" download="Maria Eduarda Rodrigues.pdf" target="application/pdf" rel="external">Baixar arquivo em PDF</a></li>
+        <li><a href="download/Maria Eduarda Rodrigues.zip" download="Maria Eduarda Rodrigues.zip" target="application/zip" rel="external">Baixar arquivo compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

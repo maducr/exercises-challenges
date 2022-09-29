@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture> <!--essa tag parece uma imagem (apresenta IMG dentro), porém permite a criação de várias fontes-->
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--A ordem dos source tem que ser obedecida-->
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir  áudios em HTML5</p>
+    <audio preload="auto" src="midias/county_lines-telecasted.mp3" controls autoplay></audio> <!--Formatos compativeis: MP3 WAV OGG-->
+
+    <audio preload="none" controls loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <!--Primeiro ele vai tentar carregar o mp3 e se não for possível vai carregar os demais-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/guanacast-33.mp3">Clique para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <audio preload="metadata" controls>
+        <source src="midias/sailing-telecasted.mp3" type="audio/mpeg">
+        <source src="midias/sailing-telecasted.ogg" type="audio/ogg">
+        <source src="midias/sailing-telecasted.wav" type="audio/wav">
+        <!--Primeiro ele vai tentar carregar o mp3 e se não for possível vai carregar os demais-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/sailing-telecasted.mp3">Clique para baixar o arquivo MP3</a></p>
+        <!--Sempre optar por MP3 (arquivos de navegação precisão ser comprimidor, opte por arquivos de alta qualidade para download)-->
+    </audio>
+    
+</body>
+</html>

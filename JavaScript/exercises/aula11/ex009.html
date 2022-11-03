@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiros</title>
+</head>
+<body>
+    <h1>Sou estrangeiro?</h1>
+    País de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Analisar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            var pais = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            var vel = String(pais.value)
+            res.innerHTML = `Vivendo em ${pais}`
+            if(pais == 'Brasil') {
+                console.log('Você é brasileiro!')
+            }
+            console.log('Você é estrangeiro!')
+        }
+    </script>
+</body>
+</html>
+
+<!-- REFAZER O CÓDIGO -->
